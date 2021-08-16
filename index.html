@@ -1,247 +1,35 @@
-
-<!DOCTYPE HTML>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
-<meta name="applicable-device" content="pc,mobile" />
-<link rel="dns-prefetch" href="f.7x24s.com" />
-<link rel="dns-prefetch" href="f.bmcx.com" />
-<link rel="canonical" href="https://biaozhunshijian.bmcx.com/" />
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="//f.bmcx.com/file/biaozhunshijian/i_c_o_57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//f.bmcx.com/file/biaozhunshijian/i_c_o_72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//f.bmcx.com/file/biaozhunshijian/i_c_o_114x114.png" />
-<meta name="format-detection" content="telephone=no" />
-<meta name="keywords" content="标准时间,标准北京时间" />
-<meta name="description" content="标准时间" />
-<title>北京时间 - 北京时间在线校准</title>
-<script>cache_sjs="20031912";sj_jie_mian="1";</script>
-<link href="//f.bmcx.com/img/css/style.css?v=c2c606e890f506c3_17825" rel="stylesheet" type="text/css" />
-<script src="//f.bmcx.com/img/js/js.js?v=1bf99e089b575f31_11119"></script>
-<script src="//f.bmcx.com/g/data/data.js?v=ffc9e56cc84f5c2c_6406"></script>
-<script aysnc="aysnc" src="//f.7x24s.com/public/sweetalert/sweetalert.min.js?v=4d5f1d03dd247211_40802"></script>
-<script aysnc="aysnc" src="//f.bmcx.com/file/user/login/js.js?v=0a88bc65b30cde6a_13291"></script>
-<script>all_zhi_xing_js_head();</script>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>时间的动态显示</title>
+   <script language="javascript">
+         var t = null;
+        t = setTimeout(time,1000);//开始执行
+        function time()
+         {
+             clearTimeout(t);//清除定时器
+             dt = new Date();
+               var y=dt.getYear()+1900;
+               var mm=dt.getMonth()+1;
+               var d=dt.getDate();
+               var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+               var day=dt.getDay();
+               var h=dt.getHours();
+               var m=dt.getMinutes();
+               var s=dt.getSeconds();
+               if(h<10){h="0"+h;}
+               if(m<10){m="0"+m;}
+               if(s<10){s="0"+s;}
+               document.getElementById("timeShow").innerHTML =  "现在的时间为："+y+"年"+mm+"月"+d+"日"+weekday[day]+" "+h+":"+m+":"+s+"";
+               t = setTimeout(time,1000); //设定定时器，循环执行           
+         }
+    </script>
+    <style>
+        .time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+    </style>
 </head>
 
 <body>
-<div id="pmk_sj_top" class="pmk_sj_show">
-<a href="javascript:void(0);" onclick="sj_menu_qie_huan()" id="pmk_sj_menu_an_niu">　</a>
-<span>北京时间</span>
-</div>
-
-<ul id="pmk_sj_menu" class="pmk_sj_show">
-<li><a href="//www.bmcx.com">首页</a></li>
-<li><a href="javascript:void(0)" onclick="open_Iframe('//user.bmcx.com/web_system/bmcx_com_www/system/file/user/login/iframe_weixin.php', '无按钮');">登录/注册</a></li><li><a href="//about.7x24s.com/contact/">联系我们</a></li>
-</ul>
-
-
-
-
-<div id="top" class="pmk_990_show pmk_1040_show">
-
-<div style="float:left;">
-<a style="color:#363;" href="//www.bmcx.com/api/" target="_blank">接口调用</a>
-<a style="color:#F00;" href="//about.7x24s.com/contact/" target="_blank" rel="nofollow">意见/报错</a>
-</div>
-
-<div style="float:right;">
-<a href="javascript:void(0)" onclick="open_Iframe('//user.bmcx.com/web_system/bmcx_com_www/system/file/user/login/iframe_weixin.php', '无按钮');">登录 / 注册</a> </div>
-
-</div>
-
-
-
-
-<div id="main">
-
-
-<div id="top_logo" class="pmk_990_show pmk_1040_show">
-<a href="//www.bmcx.com/"><img id="top_logo_img" src="//f.bmcx.com/img/logo.png?v=8230ce021585c79d_5874" alt="便民查询网 - bmcx.com - 在线查询 - 实用工具" /></a>
-<div id="ggwz___1" class="pmk_990_show pmk_1040_show top_ggwz"><script>ggdm_duqu("ggwz___1", "468x60");</script></div>
-</div>
-
-<script>try{parent.dingbu_shezhi();}catch (e){}</script>
-
-
-
-
-
-
-<!-- 左侧开始 -->
-<div id="main_left">
-
-<div class="kuang" style="margin-bottom: 8px;">
-
-
-<div id="main_title" class="kuang_title" >
-<span id="main_shouye_anniu"><a href="//www.bmcx.com/">首页</a><span class="main_title_gt">&gt;</span></span>
-<a href="//biaozhunshijian.bmcx.com/" id="main_anniu">北京时间</a>
-</div>
-
-
-<div id="main_content">
-<div class="nry_bt">
-<img src="//f.bmcx.com/file/biaozhunshijian/i_c_o.png?v=94f98011ed36c9c7_3681" alt="北京时间">
-<h1>北京时间</h1>
-</div>
-
-
-
-<div class="huisefengexian"><div class="pmk_990_show pmk_1040_show">下载：<a href="//www.bmcx.com/timesync/" target="_blank">网络时间同步软件</a></div></div>
-
-<div align="center">
-<br />本站时间与“国家授时中心”时间实时同步<br /><br />
-</div>
-
-
-
-<div align="center">
-<span style="font-size:25px;color: #266004;">标准北京时间：</span>
-<div class="pmk_sj_show"></div>
-<span id="shijian_server" style="font-size:25px;color: #266004;font-family: Arial, Helvetica, sans-serif;">初始化中...</span>
-</div>
-<div align="center">
-<span style="font-size:25px;color: #D92119;">你的设备时间：</span>
-<div class="pmk_sj_show"></div>
-<span id="shijian_local" style="font-size:25px;color: #D92119;font-family: Arial, Helvetica, sans-serif;">初始化中...</span>
-</div>
-
-<script src="//f.bmcx.com/file/biaozhunshijian/js.js?v=7c6db59b8b24d0b2_1012"></script>
-
-<!-- <div align="center">
-<br /><br /><a href="//djs.bmcx.com/chunjie__djs/"><span style="font-size:16px;color:#D92119;">点此查看春节倒计时</span></a>
-</div> -->
-<div align="center" class="pmk_990_show pmk_1040_show">
-<br /><br /><a href="/shijiantongbu/">如需精准对时请点此进入&gt;&gt;</a>
-</div>
-
-<div id="ggwz___2" class="pmk_990_show pmk_1040_show" style="height:90px;margin-top:18px;margin-bottom:8px"><script>ggdm_duqu("ggwz___2", "728x90");</script></div>
-
-
-
-
-<h2 class="xiaoshuomingkuang_biaoti">关于北京时间</h2> 
-<div class="xiaoshuomingkuang_neirong">
-<div align="center"><img src="//f.bmcx.com/file/biaozhunshijian/pic.jpg" alt="北京时间在线校准 - 标准时间 - 标准北京时间 - 全球标准时间 - 全球时区 - 北京时间校准" width="80%"></div>
-<p>我国幅员辽阔，从西到东横跨东五、东六、东七、东八和东九五个时区。中华人民共和国成立以后，全国统一采用首都北京所在的东八时区的区时作为标准时间，称为北京时间。北京时间是东经120°经线的地方平太阳时，而不是北京的地方平太阳时。北京的地理经度为东经116°21′，因而北京时间与北京地方平太阳时相差约14.5分。北京时间比格林尼治时间（世界时）早8小时，即：北京时间=世界时+8小时</p>
-<p>北京时间不是在北京确定的，而是由位于中国版图几何中心位置陕西临潼和陕西蒲城的中国科学院国家授时中心（国家授时台）的9台铯原子钟（铯钟）和2台氢原子钟组通过精密比对和计算实现，并通过卫星与世界各国授时部门进行实时比对。北京时间是东经120度经线的平太阳时，不是北京的当地平太阳时。北京的地理位置为东经116度21′，因而它的地方平太阳时比北京时间晚约14分半钟。北京时间比世界标准时间早8小时。 授时台位于陕西蒲城，主要有短波和长波专用无线电标准时间标准频率发播台（代号分别为BPM和BPL）。</p>
-<p>地球一周被分成24等份，每一等份为一个时区。这样一个时区是经度15度。一天24小时，所以相差一个时区就相差一个小时。经度零度即本初子午线的时间为世界标准时间。由于子午线穿越英国伦敦格林尼治天文台原址，故称格林尼治时间[1]，这也是英国的标准时间。北京的经度是116度21分，所以在子午线往东第八个时区内。即东八时区。8×15=120，所以东八时区的区时为东经120度的时间，就是北京时间。</p>
-<p>“北京时间”是我国使用的东八时区的区时，该时区中央经线的经度是东经120°。依据国际标准时区  英国伦敦格林尼治天文台原址划分的方法和我国所处的地理位置，虽然我国跨越了5个时区，但主要位于东六时区、东七时区、东八时区内，这三个时区的中央经线经度依次分别为东经90°、东经105°、东经120°。如果对我国位于东经82.5°以西东五时区的地区，采用与东六时区相同的标准时；东经127.5°以东的东九时区的地区，采用与东八时区相同的标准时。这样用三个时区的区时就覆盖了全国，也就基本上满足了各地是以中天时刻为时刻标准的地方时。“北京时间”仍是东八时区的标准时，东七时区、东六时区采用的标准时，分别比“北京时间”晚1小时、晚2小时，时间名称可分别定为“重庆(直辖市)时间”、“新疆西藏时间”。或者东六时区、东七时区、东八时区的标准时名称分别定为“西部时间”、“中部时间”、“东部时间”</p>
-<p>本工具为原51240北京时间。</p>
-</div> </div>
-</div>
-
-<div id="ggwz___3" class="kuang pmk_990_show pmk_1040_show" style="height:90px;margin-bottom:8px;"><script>ggdm_duqu("ggwz___3", "728x90");</script></div>
-
-</div>
-<!-- 左侧结束 -->
-
-
-
-
-
-<!-- 右侧开始 -->
-<div id="main_right" class="pmk_990_show pmk_1040_show">
-<div id="main_right_zi">
-
-<div id="ggwz___4" class="pmk_990_show" style="background-color:#DDF4FE;height:250px;margin-bottom:8px;"><script>ggdm_duqu("ggwz___4", "250x250");</script></div>
-<div id="ggwz___5" class="pmk_1040_show" style="background-color:#DDF4FE;height:250px;margin-bottom:8px;"><script>ggdm_duqu("ggwz___5", "300x250");</script></div>
-
-
-<div class="kuang" style="margin-bottom:8px;">
-<div class="kuang_title">推荐工具</div>
-<ul class="tl">
-<li><a href="//shouji.bmcx.com/" target="_blank">手机号码查询</a></li><li><a href="//tel.bmcx.com/" target="_blank">固定电话查询</a></li><li><a href="//shenfenzheng.bmcx.com/" target="_blank">身份证查询</a></li><li><a href="//weixingditu.bmcx.com/" target="_blank">卫星地图</a></li><li><a href="//fanyi.bmcx.com/" target="_blank">在线翻译</a></li><li><a href="//qqjiazhi.bmcx.com/" target="_blank">QQ价值评估</a></li><li><a href="//ip.bmcx.com/" target="_blank">IP地址查询</a></li><li><a href="//laohuangli.bmcx.com/" target="_blank">老黄历</a></li><li><a href="//naozhong.bmcx.com/" target="_blank">在线闹钟</a></li><li><a href="//huobiduihuan.bmcx.com/" target="_blank">货币汇率兑换</a></li></ul>
-<div></div>
-</div>
-
-<div></div>
-<div id="ggwz___6" class="pmk_990_show" style="background-color:#DDF4FE;height:250px;margin-bottom:8px;"><script>ggdm_duqu("ggwz___6", "250x250");</script></div>
-<div id="ggwz___7" class="pmk_1040_show" style="background-color:#DDF4FE;height:250px;margin-bottom:8px;"><script>ggdm_duqu("ggwz___7", "300x250");</script></div>
-<div></div>
-
-
-</div>
-</div>
-<!-- 右侧结束 -->
-
-
-<div class="pmk_990_show pmk_1040_show">
-<div id="ggwz___8" class="pmk_990_show" style="height:52px;clear:both;"><script>ggdm_duqu("ggwz___8", "990x52");</script></div>
-<div id="ggwz___9" class="pmk_1040_show" style="height:52px;clear:both;"><script>ggdm_duqu("ggwz___9", "1040x52");</script></div>
-</div>
-
-
-
-<div id="ggwz___10" class="pmk_sj_show" style="margin-top:4px;clear:both;"><script>ggdm_duqu("ggwz___10", "20bi20");</script></div>
-
-
-
-
-<script type="text/javascript">try{parent.zhongbu_shezhi();}catch (e){}</script>
-
-<script>all_zhi_xing_js();</script>
-
-
-<div id="bottom_fjxx">
-<div class="kuang pmk_990_show pmk_1040_show" style="margin-top:8px;"><div class="kuang_title">随机推荐查询工具</div><div style="padding: 5px;line-height: 18px;"><a href="//shou.bmcx.com/" target="_blank">手型图解</a> <a href="//yan.bmcx.com/" target="_blank">眼型图解</a> <a href="//qqjiazhi.bmcx.com/" target="_blank">QQ价值评估</a> <a href="//wangsuceshi.bmcx.com/" target="_blank">网速测试</a> <a href="//ip.bmcx.com/" target="_blank">IP/域名查询</a> <a href="//shouji.bmcx.com/" target="_blank">手机号码查询</a> <a href="//naozhong.bmcx.com/" target="_blank">在线闹钟</a> <a href="//shenfenzheng.bmcx.com/" target="_blank">身份证查询</a> <a href="//fanyi.bmcx.com/" target="_blank">在线翻译</a> <a href="//bingdusaomiao.bmcx.com/" target="_blank">在线病毒文件扫描</a> <a href="//yanbaojiancao.bmcx.com/" target="_blank">眼保健操</a> <a href="//yaopin.bmcx.com/" target="_blank">药品查询</a> <a href="//tianqiyubao.bmcx.com/" target="_blank">天气预报</a> <a href="//riqicha.bmcx.com/" target="_blank">日期差计算</a> <a href="//miaobiao.bmcx.com/" target="_blank">在线秒表</a> <a href="//wannianrili.bmcx.com/" target="_blank">万年日历查询</a> <a href="//xunleikuaiche.bmcx.com/" target="_blank">迅雷,快车,旋风链接加密解密</a> <a href="//shipu.bmcx.com/" target="_blank">食谱大全</a> <a href="//saomiao.bmcx.com/" target="_blank">在线端口扫描</a> <a href="//zhongcaoyao.bmcx.com/" target="_blank">中草药</a> <a href="//lianjiejiancha.bmcx.com/" target="_blank">友情链接检查</a> <a href="//anquanqi.bmcx.com/" target="_blank">安全期计算</a> <a href="//huaiyunjisuanqi.bmcx.com/" target="_blank">怀孕计算器</a> <a href="//richurimo.bmcx.com/" target="_blank">日出日没时刻</a> <a href="//shengnanshengnv.bmcx.com/" target="_blank">生男生女</a> <a href="//tizhongceshi.bmcx.com/" target="_blank">体重测试</a> <a href="//kaluli.bmcx.com/" target="_blank">食物卡路里</a> （<a href="//www.bmcx.com/" target="_blank">查看全部</a>）</div></div></div>
-
-
-
-<div class="kuang pmk_sj_show pmk_api_none" id="pmk_sj_hddb">
-欢迎关注微信公众号：<span class="lvse">便民查询网</span><br>
-<img src="//f.bmcx.com/img/weixin.png?v=3f8618a4d89945f3_3773" width="100" height="100"><br>
-1、长按上方二维码，保存至手机相册；<br>
-2、进微信扫一扫，从相册中选择识别二维码。
-</div>
-<div class="pmk_sj_show pmk_api_none" id="pmk_sj_lxwm"><a href="//about.7x24s.com/contact/" rel="nofollow">联系我们</a></div>
-
-
-</div>
-
-
-
-
-
-
-
-<div id="bottom_top" class="pmk_990_show pmk_1040_show">
-<a href="//www.bmcx.com/api/" target="_blank">接口调用</a>
-|
-<a href="//about.7x24s.com/contact/" target="_blank" rel="nofollow">意见建议</a>
-</div>
-
-
-
-
-
-
-
-<div id="bottom" class="pmk_990_show pmk_1040_show">
-CopyRight &copy; 2004-2021 <a href="//www.bmcx.com/">便民查询网</a> All Rights Reserved<br /><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">闽ICP备2020022420号-1</a> <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">闽B2-20210351</a><br>
-<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35011102350673" target="_blank" rel="nofollow"><img src="//f.7x24s.com/public/img/beian_gov_cn.png" style="vertical-align:middle;margin-right:5px;">闽公网安备 35011102350673号</a>
-</div>
-
-
-
-<script>try{parent.dibu_shezhi();}catch (e){}</script>
-
-
-
-
-<script>jie_mian_qie_huan();</script>
-
-
-
-
-<script>xuan_ting("main_left", "main_right_zi");</script>
-
-<div style="display:none"><script src="//f.bmcx.com/tongji/bmcx.com.js?v=c6924e8a9bacd56d_530"></script></div>
-
-
+<div id="timeShow" class="time1"></div>
 </body>
 </html>
-<!-- 172.16.27.63 |-ok-| -->
